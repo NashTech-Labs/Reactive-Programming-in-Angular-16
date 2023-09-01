@@ -1,0 +1,19 @@
+<div class="content container" id="car-brands">
+  <div fxLayout="row wrap" fxLayoutGap="16px grid">
+    <div
+            fxFlex="25%"
+            fxFlex.xs="100%"
+            fxFlex.sm="33%"
+            *ngFor="let carBrand of data$ | async"
+    >
+      <mat-card class="mat-elevation-z4">
+        <mat-card-header>
+          <button>
+            <p>{{ carBrand["brand_name"] }}</p>
+          </button>
+        </mat-card-header>
+      </mat-card>
+    </div>
+  </div>
+</div>
+  
