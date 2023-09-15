@@ -7,7 +7,7 @@ import {CarsDetails} from '../models/cars.model';
   providedIn: 'root',
 })
 export class CarsService {
-  private apiUrl = 'https://my.api.mockaroo.com/car_brand_random.json?key=dcbc8750';
+  private apiUrl = 'your-api-uri';
 
   constructor(private httpClient: HttpClient) {}
 
